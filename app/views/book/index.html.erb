@@ -1,12 +1,18 @@
 <h1>Book#index</h1>
-<div>
+<div id="masonry-container">
 <% @books.each do |book| %>
-  <div>
-    <div><%= book.title %></div>
-    <div><%= book.page_url %></div>
-    <div><img src="<%= book.small_image %>" /></div>
-    <div><img src="<%= book.medium_image %>" /></div>
-    <div><img src="<%= book.large_image %>" /></div>
+  <% size = ["small", "small", "medium", "large"].sample %>
+  <div class="alignleft mas-box <%= size %>">
+    <a href="<%= book.page_url %>">
+      <% case size %>
+      <% when "small" %>
+        <img src="<%= book.medium_image %>" height="160px" />
+      <% when "medium" %>
+        <img src="<%= book.large_image %>" height="250px" />
+      <% when "large" %>
+        <img src="<%= book.large_image %>" height="375px" />
+      <% end %>
+    </a>
   </div>
 <% end %>
 </div>

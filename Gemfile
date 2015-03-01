@@ -41,3 +41,4 @@ gem 'spring',        group: :development
 gem 'rspec-rails'
 
 gem 'amazon-ecs'
+gem 'masonry-rails'

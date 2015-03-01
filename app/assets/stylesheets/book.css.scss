@@ -1,3 +1,30 @@
 // Place all the styles related to the book controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.small {
+    height: 170px;
+    background:#68BCBC;
+}
+.medium {
+    height: 260px;
+    background:#71AAD7;
+}
+.large {
+    height: 385px;
+    background:#EBB056;
+}
+.alignleft { float: left; }
+#masonry-container {
+    width:100%;
+    margin:0 auto;
+    background:#eee;
+}
+.mas-box {
+    width: 120px;
+    margin: 5px;
+    overflow: hidden;
+}
+.mas-box > a > img {
+    display: block;
+    margin: 5px auto
+}
