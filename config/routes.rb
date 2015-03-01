@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'book/index'
+
+  get 'book/request_amazon/:browse_node_id(/:item_page)' => 'book#request_amazon', :defaults => {:item_page => 1}
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

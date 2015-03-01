@@ -1,0 +1,12 @@
+<h1>Book#index</h1>
+<div>
+<% @books.each do |book| %>
+  <div>
+    <div><%= book.title %></div>
+    <div><%= book.page_url %></div>
+    <div><img src="<%= book.small_image %>" /></div>
+    <div><img src="<%= book.medium_image %>" /></div>
+    <div><img src="<%= book.large_image %>" /></div>
+  </div>
+<% end %>
+</div>
