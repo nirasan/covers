@@ -1,6 +1,7 @@
 class BookController < ApplicationController
   def index
-    @books = Book.all
+    ids = ((0..Book.maximum(:id)).to_a.shuffle)[0..100]
+    @books = Book.where(id: ids).all.shuffle
   end
 
   def request_amazon
