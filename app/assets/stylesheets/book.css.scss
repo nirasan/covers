@@ -2,29 +2,47 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .small {
-    height: 170px;
+    height: 260px;
+    width: 185px;
     background:#68BCBC;
+    a img {
+        display: block;
+        margin: 5px auto
+    }
 }
 .medium {
-    height: 260px;
+    height: 530px;
+    width: 185px;
     background:#71AAD7;
+    a div {
+        height: 500px;
+        width: 175px;
+        overflow: hidden;
+        margin: 15px auto;
+        img {
+            display: block;
+            margin: 0px auto;
+        }
+    }
 }
 .large {
-    height: 385px;
+    height: 530px;
+    width: 380px;
     background:#EBB056;
+    a img {
+        display: block;
+        margin: 15px auto
+    }
 }
-.alignleft { float: left; }
+.alignleft {
+    float: left;
+}
 #masonry-container {
     width:100%;
     margin:0 auto;
     background:#eee;
 }
 .mas-box {
-    width: 120px;
     margin: 5px;
     overflow: hidden;
-}
-.mas-box > a > img {
-    display: block;
-    margin: 5px auto
 }

@@ -5,11 +5,13 @@
     <a href="<%= book.page_url %>">
       <% case size %>
       <% when "small" %>
-        <img src="<%= book.medium_image %>" height="160px" />
+        <img src="<%= book.medium_image %>" height="250px" width="175px" />
       <% when "medium" %>
-        <img src="<%= book.large_image %>" height="250px" />
+        <div>
+        <img src="<%= book.large_image %>" height="500px" width="350px" />
+        </div>
       <% when "large" %>
-        <img src="<%= book.large_image %>" height="375px" />
+        <img src="<%= book.large_image %>" height="500px" width="350px" />
       <% end %>
     </a>
   </div>
